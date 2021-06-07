@@ -1,0 +1,200 @@
+[BG:#1E1E1E]
+Window();
+[Border:0, FG:#1C1B1C]
+Banner("4plug/4plug_images/managers/thumbnailBanner.png", "auto", "topleft");
+Banner("4plug/4plug_images/managers/thumbnailBanner_v2.png", "auto", "topleft");
+
+Banner("4plug/4plug_images/color_seccion.png", "auto", "topleft");
+
+
+[Border:0, FG:#1C1B1C]
+[Name:Choose your resolution, Default:Lower, FG:#7A5EF8, BG:#F4F4F4, Border:0]
+GlobalComboBox("Choose your resolution", "Choose your resolution")
+{
+16:9
+4:3
+16:10
+}
+
+[Name:Steam Summer Sale Border, Default:Lower, FG:#7A5EF8, BG:#33CCFF, Border:0]
+GlobalComboBox("Steam Summer Sale Border", "Steam Summer Sale Border")
+{
+Disabled
+Portal Blue
+Portal Orange
+Neon
+}
+
+Banner("4plug/4plug_images/logo_custom.png", "auto", "topleft");
+
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+[Name:Chat Fonts, Default:Lower, FG:#7A5EF8, BG:#5094AF, Border:0]
+GlobalComboBox("Chat Fonts", "Chat Fonts")
+{
+Default
+Comic Sans
+Noto Sans
+}
+[Name:Chat Positions, Default:Lower, FG:#7A5EF8, BG:#5094AF, Border:0]
+GlobalComboBox("Chat Positions", "Chat Positions")
+{
+Lower Small (default)
+Middle Small
+Up Small
+Lower Big
+Middle Big
+Up Big
+}
+
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+
+Banner("4plug/4plug_images/hud.png", "auto", "topleft");
+
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+[Name:Crosshair Hud Type, Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshair Hud Type", "Crosshair Hud Type")
+{
+Default
+OFF
+}
+
+Banner("4plug/4plug_images/misc.png", "auto", "topleft");
+
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+Banner("4plug/4plug_images/transparentv.png", "auto", "topleft");
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+[Name:EXPERIMENTAL Cart BG Glow, Default:Lower, FG:#7A5EF8, BG:#5094AF, Border:0]
+GlobalComboBox("EXPERIMENTAL Cart BG Glow", "EXPERIMENTAL Cart BG Glow")
+{
+OFF (Default)
+ON (Forces Transparent V.)
+}
+[Border:0, FG:#1C1B1C]
+Banner("4plug/4plug_images/glowbg.png", "auto", "topleft");
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+
+[Name:EXPLOIT No Scope, Default:Lower, FG:#7A5EF8, BG:#5094AF, Border:0]
+GlobalComboBox("EXPLOIT No Scope", "EXPLOIT No Scope")
+{
+OFF (Default)
+ON
+}
+[Border:0, FG:#1C1B1C]
+Banner("4plug/4plug_images/noscope.png", "auto", "topleft");
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+[Name:EXPLOIT Square Shadows, Default:Lower, FG:#7A5EF8, BG:#5094AF, Border:0]
+GlobalComboBox("EXPLOIT Square Shadows", "EXPLOIT Square Shadows")
+{
+OFF (Default)
+ON
+}
+[Border:0, FG:#1C1B1C]
+Banner("4plug/4plug_images/squares.png", "auto", "topleft");
+Banner("4plug/4plug_images/managers/thumbnailBannerBottom.png", "auto", "topleft");
+[Name:MAIN-MENU Steam Friend List Switcher, Default:Lower, FG:#7A5EF8, BG:#00DC44, Border:0]
+GlobalComboBox("MAIN-MENU Steam Friend List Switcher", "MAIN-MENU Steam Friend List Switcher")
+{
+ON (Default)
+OFF
+}
+
+#if Steam Summer Sale Border == "Disabled"
+{
+Copy("4plug/4plug_overrides/empty.txt", "ui_overrides/resource/firstrun/s_border.res");
+}
+#if Steam Summer Sale Border == "Portal Orange"
+{
+Copy("4plug/4plug_overrides/summersale/orange.res", "ui_overrides/resource/firstrun/s_border.res");
+}
+#if Steam Summer Sale Border == "Portal Blue"
+{
+Copy("4plug/4plug_overrides/summersale/azul.res", "ui_overrides/resource/firstrun/s_border.res");
+}
+#if Steam Summer Sale Border == "Neon"
+{
+Copy("4plug/4plug_overrides/summersale/neon.res", "ui_overrides/resource/firstrun/s_border.res");
+}
+#if Chat Fonts == "Default"
+{
+Copy("4plug/4plug_overrides/ChatFont/Default.res", "resource/chatscheme.res");
+}
+#if Chat Fonts == "Comic Sans"
+{
+Copy("4plug/4plug_overrides/ChatFont/Comicsans.res", "resource/chatscheme.res");
+}
+#if Chat Fonts == "Noto Sans"
+{
+Copy("4plug/4plug_overrides/ChatFont/Notosans.res", "resource/chatscheme.res");
+}
+#if Chat Positions == "Lower Small (default)"
+{
+Copy("4plug/4plug_overrides/ChatPosition/Chat_Lower.res", "resource/ui/Basechat.res");
+}
+#if Chat Positions == "Middle Small"
+{
+Copy("4plug/4plug_overrides/ChatPosition/Chat_Middle.res", "resource/ui/Basechat.res");
+}
+#if Chat Positions == "Up Small"
+{
+Copy("4plug/4plug_overrides/ChatPosition/Chat_upper.res", "resource/ui/Basechat.res");
+}
+#if Chat Positions == "LowerBig"
+{
+Copy("4plug/4plug_overrides/ChatPosition/Chat_lower_big.res", "resource/ui/Basechat.res");
+}
+#if Chat Positions == "Middle Big"
+{
+Copy("4plug/4plug_overrides/ChatPosition/Chat_middle_big.res", "resource/ui/Basechat.res");
+}
+#if Chat Positions == "Up Big"
+{
+Copy("4plug/4plug_overrides/ChatPosition/Chat_upper_big.res", "resource/ui/Basechat.res");
+}
+
+#if Crosshair Hud Type == "Default"
+{
+
+Copy("4plug/4plug_overrides/HPExtraBorders/extra_borders_cross_sc_off.res", "ui_overrides/scripts/shortcut/old/extra_borders_cross_sc.res");
+}
+#if Crosshair Hud Type == "OFF"
+{
+Copy("4plug/4plug_overrides/WeaponCrosshairSwitcher/OFF.res", "ui_overrides/resource/ui/custom/+weaponcrosshair.res");
+Copy("4plug/4plug_overrides/HPExtraBorders/extra_borders_cross_sc_off.res", "ui_overrides/scripts/shortcut/old/extra_borders_cross_sc.res");
+}
+
+#if EXPLOIT No Scope == "OFF (Default)"
+{
+Copy("4plug/4plug_overrides/NoScope/noscopeOFF.txt", "ui_overrides/scripts/hudanimations_tf_noscope.txt");
+}
+#if EXPLOIT No Scope == "ON"
+{
+Copy("4plug/4plug_overrides/NoScope/noscopeON.txt", "ui_overrides/scripts/hudanimations_tf_noscope.txt");
+}
+#if EXPLOIT Square Shadows == "OFF (Default)"
+{
+Copy("4plug/4plug_overrides/empty.txt", "ui_overrides/scripts/stupidshadows.res");
+Copy("4plug/4plug_overrides/empty.txt", "cfg/hud_cfg/addon1.cfg");
+}
+#if EXPLOIT Square Shadows == "ON"
+{
+Copy("4plug/4plug_overrides/SquareShadows/ON.res", "ui_overrides/scripts/stupidshadows.res");
+Copy("4plug/4plug_overrides/SquareShadows/addon1.cfg", "cfg/hud_cfg/addon1.cfg");
+}
+
+#if EXPERIMENTAL Cart BG Glow == "OFF (Default)"
+{
+Copy("4plug/4plug_overrides/CartGlow/OFF.txt", "ui_overrides/scripts/hudanimations_tf_glow.txt");
+}
+#if EXPERIMENTAL Cart BG Glow == "ON (Forces Transparent V.)"
+{
+Copy("4plug/4plug_overrides/CartGlow/ON.txt", "ui_overrides/scripts/hudanimations_tf_glow.txt");
+}
+
+#if MAIN-MENU Steam Friend List Switcher == "ON (Default)"
+{
+Copy("4plug/4plug_overrides/FriendList/friend_list_on.res", "ui_overrides/resource/firstrun/friend_list.res");
+}
+#if MAIN-MENU Steam Friend List Switcher == "OFF"
+{
+Copy("4plug/4plug_overrides/empty.txt", "ui_overrides/resource/firstrun/friend_list.res");
+}

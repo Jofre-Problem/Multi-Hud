@@ -1,0 +1,7 @@
+#base "16-9/shortcut/vertical_sc.res"
+#base "16-9/shortcut/horizontal_right_sc.res"
+#base "16-9/shortcut/horizontal_left_sc.res"
+#base "16-9/shortcut/top_sc.res"
+#base "16-9/shortcut/bottom_sc.res"
+#base "16-9/shortcut/left_sc.res"
+#base "16-9/shortcut/right_sc.res"

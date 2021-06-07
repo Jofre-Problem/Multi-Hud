@@ -1,0 +1,11 @@
+hudanimations_manifest
+{
+
+"file" "scripts/hudanimations_secondary.txt"
+"file" "ui_overrides/scripts/4plug/hitmarker.txt"
+"file" "ui_overrides/scripts/hudanimations_tf_noscope.txt"
+"file" "ui_overrides/scripts/hudanimations_tf_glow.txt" 
+"file" "ui_overrides/scripts/hudanimations_custom.txt"
+"file" "scripts/hudanimations.txt"
+"file" "scripts/hudanimations_tf.txt"
+}

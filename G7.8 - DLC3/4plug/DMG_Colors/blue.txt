@@ -1,0 +1,3 @@
+﻿hud_combattext_red 0
+hud_combattext_green 0
+hud_combattext_blue 255

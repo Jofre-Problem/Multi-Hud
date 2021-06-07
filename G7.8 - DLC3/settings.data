@@ -1,0 +1,634 @@
+[BG:#1E1E1E]
+Window();
+
+[Border:0, FG:#1C1B1C]
+Banner("4plug/4plug_images_dlc3/thumbnailBanner.png", "auto", "topleft");
+Banner("4plug/4plug_images_dlc3/thumbnailBanner_v2.png", "auto", "topleft");
+Banner("4plug/4plug_images_dlc3/introduction.png", "auto", "topleft");
+Banner("4plug/4plug_images_dlc3/bug.png", "auto", "topleft");
+Banner("4plug/4plug_images_dlc3/choose.png", "auto", "topleft");
+[Border:0, FG:#1C1B1C]
+[Name:Damage Colors, Default:Lower, FG:#7A5EF8, BG:#FFFFFF, Border:0]
+GlobalComboBox("Damage Colors","Damage Colors")
+{
+Red
+White
+Orange
+Yellow
+Green
+Blue
+Purple
+Pink
+White - Snow
+White - Honeydew
+White - Mintcream
+White - Azure
+White - Aliceblue
+White - Ghostwhite
+White - Whitesmoke
+White - Seashell
+White - Beige
+White - Oldlace
+White - Floralwhite
+White - Ivory
+White - Antiquewhite
+White - Linen
+White - Lavenderblush
+White - Mistyrose
+White - NavajoWhite
+Red - Lightsalmon
+Red - Salmon
+Red - DarkSalmon
+Red - Lightcoral 
+Red - Indianred
+Red - Crimson
+Red - Firebrick
+Red - Darkred
+Red - Maroon
+Red - Tomato
+Red - Orangered
+Red - Palevioletred
+Green - Lawngreen
+Green - Chartreuse
+Green - Limegreen
+Green - Lime
+Green - Forestgreen
+Green - Darkgreen
+Green - Greenyellow
+Green - Yellowgreen
+Green - Springgreen
+Green - Mediumspringgreen
+Green - Lightgreen
+Green - Palegreen
+Green - Darkseagreen
+Green - Mediumseagreen
+Green - Lightseagreen
+Green - Seagreen
+Green - Darkolivegreen
+Blue - Lightskyblue
+Blue - Skyblue
+Blue - Deepskyblue
+Blue - Lightsteelblue
+Blue - Dodgerblue
+Blue - Comflowerblue
+Blue - Steelblue
+Blue - Cadetblue
+Blue - Mediumslateblue
+Blue - Slateblue
+Blue - Darkstaleblue
+Blue - Royalblue
+Blue - Indigo
+}
+Banner("4plug/4plug_images_dlc3/choose.png", "auto", "topleft");
+[Name:Closed Captions, Default:Lower, FG:#7A5EF8, BG:#FFFFFF, Border:0]
+GlobalComboBox("Closed Captions", "Closed Captions")
+{
+OFF (Default)
+Default
+Prism
+Stock
+Common
+Tf2Captions
+Utilities
+Medcalls
+Importantcalls
+Crosshairs
+Clovervidiac
+Clovervidiar
+Gmang_full
+Gmang_lite
+Gmang_medic
+7s
+Yahud1
+Yahud2
+Crazybait
+Dendar1
+Sven
+Toonhud
+Walrus
+Spanish
+}
+}
+#if Damage Colors == "White"
+{
+Copy("4plug/DMG_Colors/white.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Snow"
+{
+Copy("4plug/DMG_Colors/White/1.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Honeydew"
+{
+Copy("4plug/DMG_Colors/White/2.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Mintcream"
+{
+Copy("4plug/DMG_Colors/White/3.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Azure"
+{
+Copy("4plug/DMG_Colors/White/4.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Aliceblue"
+{
+Copy("4plug/DMG_Colors/White/5.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Ghostwhite"
+{
+Copy("4plug/DMG_Colors/White/6.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Whitesmoke"
+{
+Copy("4plug/DMG_Colors/White/7.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Seashell"
+{
+Copy("4plug/DMG_Colors/White/8.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Beige"
+{
+Copy("4plug/DMG_Colors/White/9.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Oldlace"
+{
+Copy("4plug/DMG_Colors/White/10.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Floralwhite"
+{
+Copy("4plug/DMG_Colors/White/11.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Ivory"
+{
+Copy("4plug/DMG_Colors/White/12.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Antiquewhite"
+{
+Copy("4plug/DMG_Colors/White/13.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Linen"
+{
+Copy("4plug/DMG_Colors/White/14.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Lavenderblush"
+{
+Copy("4plug/DMG_Colors/White/15.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - Mistyrose"
+{
+Copy("4plug/DMG_Colors/White/16.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "White - NavajoWhite"
+{
+Copy("4plug/DMG_Colors/White/17.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red"
+{
+Copy("4plug/DMG_Colors/red.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Lightsalmon"
+{
+Copy("4plug/DMG_Colors/Red/1.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Salmon"
+{
+Copy("4plug/DMG_Colors/Red/2.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - DarkSalmon"
+{
+Copy("4plug/DMG_Colors/Red/3.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Lightcoral"
+{
+Copy("4plug/DMG_Colors/Red/4.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Indianred"
+{
+Copy("4plug/DMG_Colors/Red/5.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Crimson"
+{
+Copy("4plug/DMG_Colors/Red/6.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Firebrick"
+{
+Copy("4plug/DMG_Colors/Red/7.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Darkred"
+{
+Copy("4plug/DMG_Colors/Red/8.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Maroon"
+{
+Copy("4plug/DMG_Colors/Red/9.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Tomato"
+{
+Copy("4plug/DMG_Colors/Red/10.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Orangered"
+{
+Copy("4plug/DMG_Colors/Red/11.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Red - Palevioletred"
+{
+Copy("4plug/DMG_Colors/Red/12.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Orange"
+{
+Copy("4plug/DMG_Colors/orange.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Orange - Coral"
+{
+Copy("4plug/DMG_Colors/Orange/1.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Orange - Tomato"
+{
+Copy("4plug/DMG_Colors/Orange/2.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Orange - Orangered"
+{
+Copy("4plug/DMG_Colors/Orange/3.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Orange - Gold"
+{
+Copy("4plug/DMG_Colors/Orange/4.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Orange - Darkorange"
+{
+Copy("4plug/DMG_Colors/Orange/5.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow"
+{
+Copy("4plug/DMG_Colors/yellow.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Light"
+{
+Copy("4plug/DMG_Colors/Yellow/1.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Lemon"
+{
+Copy("4plug/DMG_Colors/Yellow/2.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Lightgolden"
+{
+Copy("4plug/DMG_Colors/Yellow/3.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Papaya"
+{
+Copy("4plug/DMG_Colors/Yellow/4.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Moccasin"
+{
+Copy("4plug/DMG_Colors/Yellow/5.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Peachpuff"
+{
+Copy("4plug/DMG_Colors/Yellow/6.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Palegoldenrod"
+{
+Copy("4plug/DMG_Colors/Yellow/7.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Khaki"
+{
+Copy("4plug/DMG_Colors/Yellow/8.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Darkkhaki"
+{
+Copy("4plug/DMG_Colors/Yellow/9.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Olive"
+{
+Copy("4plug/DMG_Colors/Yellow/10.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Greenyellow"
+{
+Copy("4plug/DMG_Colors/Yellow/11.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Yellow - Yellowgreen"
+{
+Copy("4plug/DMG_Colors/Yellow/12.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green"
+{
+Copy("4plug/DMG_Colors/green.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Lawngreen"
+{
+Copy("4plug/DMG_Colors/Green/1.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Chartreuse"
+{
+Copy("4plug/DMG_Colors/Green/2.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Limegreen"
+{
+Copy("4plug/DMG_Colors/Green/3.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Lime"
+{
+Copy("4plug/DMG_Colors/Green/4.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Forestgreen"
+{
+Copy("4plug/DMG_Colors/Green/5.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Darkgreen"
+{
+Copy("4plug/DMG_Colors/Green/6.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Greenyellow"
+{
+Copy("4plug/DMG_Colors/Green/7.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Yellowgreen"
+{
+Copy("4plug/DMG_Colors/Green/8.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Springgreen"
+{
+Copy("4plug/DMG_Colors/Green/9.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Mediumspringgreen"
+{
+Copy("4plug/DMG_Colors/Green/10.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Lightgreen"
+{
+Copy("4plug/DMG_Colors/Green/11.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Palegreen"
+{
+Copy("4plug/DMG_Colors/Green/12.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Darkseagreen"
+{
+Copy("4plug/DMG_Colors/Green/13.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Mediumseagreen"
+{
+Copy("4plug/DMG_Colors/Green/14.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Lightseagreen"
+{
+Copy("4plug/DMG_Colors/Green/15.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Seagreen"
+{
+Copy("4plug/DMG_Colors/Green/16.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Green - Darkolivegreen"
+{
+Copy("4plug/DMG_Colors/Green/17.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+
+#if Damage Colors == "Blue"
+{
+Copy("4plug/DMG_Colors/blue.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Lightskyblue"
+{
+Copy("4plug/DMG_Colors/Blue/1.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Skyblue"
+{
+Copy("4plug/DMG_Colors/Blue/2.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Deepskyblue"
+{
+Copy("4plug/DMG_Colors/Blue/3.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Lightsteelblue"
+{
+Copy("4plug/DMG_Colors/Blue/4.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Dodgerblue"
+{
+Copy("4plug/DMG_Colors/Blue/5.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Comflowerblue"
+{
+Copy("4plug/DMG_Colors/Blue/6.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Steelblue"
+{
+Copy("4plug/DMG_Colors/Blue/7.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Cadetblue"
+{
+Copy("4plug/DMG_Colors/Blue/8.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Mediumslateblue"
+{
+Copy("4plug/DMG_Colors/Blue/9.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Slateblue"
+{
+Copy("4plug/DMG_Colors/Blue/10.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Darkstaleblue"
+{
+Copy("4plug/DMG_Colors/Blue/11.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Royalblue"
+{
+Copy("4plug/DMG_Colors/Blue/12.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Blue - Indigo"
+{
+Copy("4plug/DMG_Colors/Blue/13.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple"
+{
+Copy("4plug/DMG_Colors/purple.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "OFF"
+{
+Copy("4plug/empty.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Thistle"
+{
+Copy("4plug/DMG_Colors/Purple/1.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Plum"
+{
+Copy("4plug/DMG_Colors/Purple/2.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Violet"
+{
+Copy("4plug/DMG_Colors/Purple/3.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Orchid"
+{
+Copy("4plug/DMG_Colors/Purple/4.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Fuchsia"
+{
+Copy("4plug/DMG_Colors/Purple/5.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Magenta"
+{
+Copy("4plug/DMG_Colors/Purple/6.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Mediumorchid"
+{
+Copy("4plug/DMG_Colors/Purple/7.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Mediumpurple"
+{
+Copy("4plug/DMG_Colors/Purple/8.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Blueviolet"
+{
+Copy("4plug/DMG_Colors/Purple/9.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Purple - Darkmagenta"
+{
+Copy("4plug/DMG_Colors/Purple/10.txt", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Damage Colors == "Pink"
+{
+Copy("4plug/DMG_Colors/pink.cfg", "cfg/hud_cfg/dmgcolors.cfg");
+}
+#if Closed Captions == "Prism"
+{
+Copy("4plug/Captions/text/closecaption_prism.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_prism.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Stock"
+{
+Copy("4plug/Captions/text/closecaption_english_stock.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_english_stock.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Common"
+{
+Copy("4plug/Captions/text/closecaption_common.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_common.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Tf2Captions"
+{
+Copy("4plug/Captions/text/closecaption_tf2captions.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_tf2captions.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+
+
+#if Closed Captions == "Utilities"
+{
+Copy("4plug/Captions/text/closecaption_utilities.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_utilities.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Medcalls"
+{
+Copy("4plug/Captions/text/closecaption_medcalls.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_utilities.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Importantcalls"
+{
+Copy("4plug/Captions/text/closecaption_importantcalls.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_utilities.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Crosshairs"
+{
+Copy("4plug/Captions/text/closecaption_crosshairs.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_utilities.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/crosshairs.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Clovervidiac"
+{
+Copy("4plug/Captions/text/closecaption_clovervidiac.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_utilities.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Clovervidiar"
+{
+Copy("4plug/Captions/text/closecaption_clovervidiar.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_utilities.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Gmang_full"
+{
+Copy("4plug/Captions/text/closecaption_english__FULL.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_english__FULL.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Gmang_lite"
+{
+Copy("4plug/Captions/text/closecaption_english__LITE.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_english__LITE.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Gmang_medic"
+{
+Copy("4plug/Captions/text/closecaption_english__MEDIC.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_english__MEDIC.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "7s"
+{
+Copy("4plug/Captions/text/closecaption_english_7.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_english_7.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Yahud1"
+{
+Copy("4plug/Captions/text/closecaption_yahud_white.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_yahud_white.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Yahud2"
+{
+Copy("4plug/Captions/text/closecaption_yahud_greenubers.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_yahud_greenubers.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Crazybait"
+{
+Copy("4plug/Captions/text/closecaption_crazybait.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_crazybait.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Dendar1"
+{
+Copy("4plug/Captions/text/closecaption_dendari.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_dendari.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Sven"
+{
+Copy("4plug/Captions/text/closecaption_sven.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_sven.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Toonhud"
+{
+Copy("4plug/Captions/text/closecaption_toonhud.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_toonhud.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Walrus"
+{
+Copy("4plug/Captions/text/closecaption_walrus.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_walrus.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/walrus.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Spanish"
+{
+Copy("4plug/Captions/text/closecaption_spanish.txt", "resource/closecaption_files/closecaption_4plug.txt");
+Copy("4plug/Captions/text/closecaption_spanish.dat", "resource/closecaption_files/closecaption_4plug.dat");
+Copy("4plug/Captions/4plug.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "OFF (Default)"
+{
+Copy("4plug/Captions/OFF.cfg", "cfg/hud_cfg/captions.cfg");
+}
+#if Closed Captions == "Default"
+{
+Copy("4plug/Captions/default.cfg", "cfg/hud_cfg/captions.cfg");
+}

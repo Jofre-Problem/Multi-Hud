@@ -1,0 +1,2 @@
+#base "../right.res"
+	

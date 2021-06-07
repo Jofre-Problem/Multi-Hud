@@ -1,0 +1,29 @@
+ADDON 4:3 Crosshairs Horizontal Left ← (LARGE)|OFF
+ADDON 4:3 Crosshairs Horizontal Right → (LARGE)|OFF
+ADDON 4:3 Crosshairs Vertical Top ↑ (LARGE)|OFF
+ADDON 4:3 Crosshairs Horizontal Left ← (SMALL)|OFF
+ADDON 4:3 Crosshairs Horizontal Right → (SMALL)|OFF
+ADDON 4:3 Crosshairs Vertical Top ↑ (SMALL)|OFF
+ADDON 4:3 Crosshairs Vertical Bottom ↓ (SMALL)|OFF
+ADDON 16:9 Crosshairs Horizontal Left ← (LARGE)|ON
+ADDON 16:9 Crosshairs Horizontal Right → (LARGE)|ON
+ADDON 16:9 Crosshairs Vertical Top ↑ (LARGE)|ON
+ADDON 16:9 Crosshairs Horizontal Left ← (SMALL)|ON
+ADDON 16:9 Crosshairs Horizontal Right → (SMALL)|ON
+ADDON 16:9 Crosshairs Vertical Top ↑ (SMALL)|ON
+ADDON 16:9 Crosshairs Vertical Bottom ↓ (SMALL)|ON
+ADDON 16:10 Crosshairs Horizontal Left ← (LARGE)|OFF
+ADDON 16:10 Crosshairs Horizontal Right → (LARGE)|OFF
+ADDON 16:10 Crosshairs Vertical Top ↑ (LARGE)|OFF
+ADDON 16:10 Crosshairs Horizontal Left ← (SMALL)|OFF
+ADDON 16:10 Crosshairs Horizontal Right → (SMALL)|OFF
+ADDON 16:10 Crosshairs Vertical Top ↑ (SMALL)|OFF
+ADDON 16:10 Crosshairs Vertical Bottom ↓ (SMALL)|OFF
+Choose your resolution|16:9
+Crosshairs Horizontal Left ← (LARGE)|OFF
+Crosshairs Horizontal Right → (LARGE)|ON
+Crosshairs Vertical Top ↑ (LARGE)|ON
+Crosshairs Horizontal Left ← (SMALL)|OFF
+Crosshairs Horizontal Right → (SMALL)|OFF
+Crosshairs Vertical Top ↑ (SMALL)|OFF
+Crosshairs Vertical Bottom ↓ (SMALL)|OFF

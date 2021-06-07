@@ -1,0 +1,26 @@
+// this file is pretty self explainatory
+// you can use this text file to put your own maps as well
+"Resource/UI/MainMenuOverride.res"
+{
+	"MOTD_Panel"
+	{
+		"Training Map Label"
+		{
+			"labelText"		"TR_WALKWAY"
+"Command"		"engine disconnect; sv_cheats 1; sv_allow_point_servercommand always; map tr_walkway_rc2"	
+		}	
+
+		"Training Map Label 2"
+		{
+			"labelText"		"TR_NEWBOTS"
+"Command"		"engine disconnect; sv_cheats 1; map tr_newbots"		
+		}	
+	
+		"Training Map Label 3"
+		{
+			"labelText"		"TR_AIM_TRAINING"
+			
+"Command"		"engine disconnect; sv_cheats 1; map tr_aim_training"
+		}	
+	}
+}

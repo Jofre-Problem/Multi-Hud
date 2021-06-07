@@ -1,0 +1,37 @@
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthValue	                FgColor		"189 236 82 255"	        Accel 0.0 0.5	
+	Animate	"TargetHealthBG"				BgColor	"0 0 0 170"			Linear	0.0	0.075
+}
+event HudHealthBonusPulseStop
+{
+	Animate PlayerStatusHealthValue	                FgColor		"Blanco"	         Accel 0.0 0.0	
+}
+event HudHealthDyingPulse
+{
+	Animate	PlayerStatusHealthValue 	                FgColor		"255 0 64 255"	         Accel 0.0 0.0		
+//	PlaySound 0 "ui/low_hp.wav"
+	Animate	"TargetHealthBG"				BgColor	"200  45  45 170"		Linear	0.0	0.075
+}
+event HudHealthDyingPulseStop
+{
+	Animate	"TargetHealthBG"				BgColor	"0 0 0 170"		Linear	0.0	0.075
+	Animate PlayerStatusHealthValue	         			    FgColor		"Blanco"	         Accel 0.0 0.0			
+}
+event HudLowAmmoPulseLoop
+{
+	RunEvent HudLowAmmoPulse 0.0
+}
+event HudLowAmmoPulse
+{
+	Animate	AmmoInClip	FgColor		"255 255 0 255"		Linear 0.0 0.5
+	Animate	AmmoNoClip	FgColor		"255 255 0 255"		Linear 0.0 0.5
+	Animate	AmmoInReserve	FgColor		"255 255 0 255"		Linear 0.0 0.5
+//	PlaySound 0 "ui/low_ammo.wav"
+}
+event HudLowAmmoPulseStop
+{
+	Animate	AmmoInClip	FgColor		"Blanco"		Linear 0.0 0.0
+	Animate	AmmoNoClip	FgColor		"Blanco"		Linear 0.0 0.0
+	Animate	AmmoInReserve	FgColor		"Blanco"		Linear 0.0 0.0
+}

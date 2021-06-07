@@ -1,0 +1,7 @@
+#base "4-3/shortcut/vertical_sc.res"
+#base "4-3/shortcut/horizontal_right_sc.res"
+#base "4-3/shortcut/horizontal_left_sc.res"
+#base "4-3/shortcut/top_sc.res"
+#base "4-3/shortcut/bottom_sc.res"
+#base "4-3/shortcut/left_sc.res"
+#base "4-3/shortcut/right_sc.res"

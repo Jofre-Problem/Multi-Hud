@@ -1,0 +1,3 @@
+hud_combattext_red 250
+hud_combattext_green 240
+hud_combattext_blue 245

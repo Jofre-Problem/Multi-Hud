@@ -1,0 +1,273 @@
+[BG:#1E1E1E]
+Window();
+
+[Border:0, FG:#1C1B1C]
+Banner("4plug/4plug_images_dlc1/thumbnailBanner.png", "auto", "topleft");
+Banner("4plug/4plug_images_dlc1/thumbnailBanner_v2.png", "auto", "topleft");
+
+Banner("4plug/4plug_images_dlc1/introduction.png", "auto", "topleft");
+
+Banner("4plug/4plug_images_dlc1/bug.png", "auto", "topleft");
+[Border:0, FG:#1C1B1C]
+Banner("4plug/4plug_images_dlc1/colores.png", "auto", "topleft");
+
+Banner("4plug/4plug_images_dlc1/thumbnailBannerBottom.png", "auto", "topleft");
+
+[Name:Choose your resolution, Default:Lower, FG:#7A5EF8, BG:#F4F4F4, Border:0]
+GlobalComboBox("Choose your resolution", "Choose your resolution")
+{
+	16:9
+	16:10
+	4:3
+}
+
+
+[Name:Crosshairs Horizontal Left ← (LARGE), Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshairs Horizontal Left ← (LARGE)", "Crosshairs Horizontal Left ← (LARGE)")
+{
+	OFF
+	ON
+}
+[Name:Crosshairs Horizontal Right → (LARGE), Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshairs Horizontal Right → (LARGE)", "Crosshairs Horizontal Right → (LARGE)")
+{
+	OFF
+	ON
+}
+
+[Name:Crosshairs Vertical Top ↑ (LARGE), Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshairs Vertical Top ↑ (LARGE)", "Crosshairs Vertical Top ↑ (LARGE)")
+{
+	OFF
+	ON
+}
+[Name:Crosshairs Horizontal Left ← (SMALL), Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshairs Horizontal Left ← (SMALL)", "Crosshairs Horizontal Left ← (SMALL)")
+{
+	OFF
+	ON
+}
+
+[Name:Crosshairs Horizontal Right → (SMALL), Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshairs Horizontal Right → (SMALL)", "Crosshairs Horizontal Right → (SMALL)")
+{
+	OFF
+	ON
+}
+[Name:Crosshairs Vertical Top ↑ (SMALL), Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshairs Vertical Top ↑ (SMALL)", "Crosshairs Vertical Top ↑ (SMALL)")
+{
+	OFF
+	ON
+}
+
+[Name:Crosshairs Vertical Bottom ↓ (SMALL), Default:Lower, FG:#7A5EF8, BG:#E11322, Border:0]
+GlobalComboBox("Crosshairs Vertical Bottom ↓ (SMALL)", "Crosshairs Vertical Bottom ↓ (SMALL)")
+{
+	OFF
+	ON
+}
+
+#if Crosshairs Horizontal Left ← (LARGE) == "OFF"
+{
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_left_sc.res");	
+}
+
+#if Crosshairs Horizontal Left ← (LARGE) == "ON"
+{
+	#if Choose your resolution == "16:9"
+	{
+	Copy("4plug/4plug_overrides/16-9_backup/horizontal_left_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_left_sc.res");	
+	}
+	#if Choose your resolution == "16:10"
+	{
+	Copy("4plug/4plug_overrides/16-10_backup/horizontal_left_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_left_sc.res");	
+	}
+	#if Choose your resolution == "4:3"
+	{
+	Copy("4plug/4plug_overrides/4-3_backup/horizontal_left_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_left_sc.res");			
+	}	
+}
+
+
+
+
+#if Crosshairs Horizontal Right → (LARGE) == "OFF"
+{
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_right_sc.res");	
+}
+
+#if Crosshairs Horizontal Right → (LARGE) == "ON"
+{
+	#if Choose your resolution == "16:9"
+	{
+	Copy("4plug/4plug_overrides/16-9_backup/horizontal_right_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_right_sc.res");		
+	}
+	#if Choose your resolution == "16:10"
+	{
+	Copy("4plug/4plug_overrides/16-10_backup/horizontal_right_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_right_sc.res");		
+	}
+	#if Choose your resolution == "4:3"
+	{
+	Copy("4plug/4plug_overrides/4-3_backup/horizontal_right_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/horizontal_right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/horizontal_right_sc.res");		
+	}	
+}
+
+
+#if Crosshairs Vertical Top ↑ (LARGE) == "OFF"
+{
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/vertical_sc.res");	
+}
+
+#if Crosshairs Vertical Top ↑ (LARGE) == "ON" 
+{
+	#if Choose your resolution == "16:9"
+	{
+	Copy("4plug/4plug_overrides/16-9_backup/vertical_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/vertical_sc.res");		
+	}
+	#if Choose your resolution == "16:10"
+	{
+	Copy("4plug/4plug_overrides/16-10_backup/vertical_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/vertical_sc.res");		
+	}
+	#if Choose your resolution == "4:3"
+	{
+	Copy("4plug/4plug_overrides/4-3_backup/vertical_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/vertical_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/vertical_sc.res");		
+	}
+}
+
+
+
+
+
+#if Crosshairs Horizontal Left ← (SMALL) == "OFF"
+{
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/left_sc.res");	
+}
+#if Crosshairs Horizontal Left ← (SMALL) == "ON"
+{
+	#if Choose your resolution == "16:9"
+	{
+	Copy("4plug/4plug_overrides/16-9_backup/left_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/left_sc.res");		
+	}
+	#if Choose your resolution == "16:10"
+	{
+	Copy("4plug/4plug_overrides/16-10_backup/left_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/left_sc.res");	
+	}
+	#if Choose your resolution == "4:3"
+	{
+	Copy("4plug/4plug_overrides/4-3_backup/left_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/left_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/left_sc.res");		
+	}
+}
+
+
+
+#if Crosshairs Horizontal Right → (SMALL) == "OFF"
+{
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/right_sc.res");	
+}
+
+#if Crosshairs Horizontal Right → (SMALL) == "ON"
+{
+	#if Choose your resolution == "16:9"
+	{
+	Copy("4plug/4plug_overrides/16-9_backup/right_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/right_sc.res");		
+	}
+	#if Choose your resolution == "16:10"
+	{
+	Copy("4plug/4plug_overrides/16-10_backup/right_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/right_sc.res");	
+	}
+	#if Choose your resolution == "4:3"
+	{
+	Copy("4plug/4plug_overrides/4-3_backup/right_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/right_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/right_sc.res");	
+	}
+}
+
+
+
+
+#if Crosshairs Vertical Top ↑ (SMALL) == "OFF"
+{
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/top_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/top_sc.res");	
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/top_sc.res");
+	
+}
+#if Crosshairs Vertical Top ↑ (SMALL) == "ON"
+{
+	#if Choose your resolution == "16:9"
+	{
+	Copy("4plug/4plug_overrides/16-9_backup/top_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/top_sc.res");
+	}
+	#if Choose your resolution == "16:10"
+	{
+	Copy("4plug/4plug_overrides/16-10_backup/top_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/top_sc.res");
+	}
+	#if Choose your resolution == "4:3"
+	{
+	Copy("4plug/4plug_overrides/4-3_backup/top_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/top_sc.res");
+	}
+}
+
+
+
+#if Crosshairs Vertical Bottom ↓ (SMALL) == "OFF"
+{
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/bottom_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/bottom_sc.res");
+	Copy("empty.txt", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/bottom_sc.res");	
+}
+#if Crosshairs Vertical Bottom ↓ (SMALL) == "ON"
+{
+	#if Choose your resolution == "16:9"
+	{
+	Copy("4plug/4plug_overrides/16-9_backup/bottom_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-9/shortcut/bottom_sc.res"
+	}
+	#if Choose your resolution == "16:10"
+	{
+	Copy("4plug/4plug_overrides/16-10_backup/bottom_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/16-10/shortcut/bottom_sc.res"
+	}
+	#if Choose your resolution == "4:3"
+	{
+	Copy("4plug/4plug_overrides/4-3_backup/bottom_sc.res", "ui_overrides/other_misc/Resolution_Crosshairs/4-3/shortcut/bottom_sc.res"
+	}
+}
