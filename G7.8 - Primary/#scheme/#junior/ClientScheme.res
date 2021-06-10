@@ -314,7 +314,7 @@
 		{
 			"1"
 			{
-				name				"Renogare Soft"
+				name				"Arial Black"
 				tall				40
 				
 			}
@@ -323,7 +323,7 @@
 		{
 			"1"
 			{
-				name				"Renogare Soft"
+				name				"Arial Black"
 				tall				57
 				
 			}
