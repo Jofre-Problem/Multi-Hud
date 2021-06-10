@@ -4,11 +4,6 @@
 #base "../#jofre/motd-code.res"
 #base "../#jofre/training maps.txt"
 #base "../#jofre/multi_bg.res"
-// User's custom background properties
-#base "MainMenuBackground.res"
-
-// Base backround properties, overriden by ^
-#base "MainMenuBackgroundDefault.res"
 
 "Resource/UI/MainMenuOverride.res"
 {
